@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(233, 150, 122); /* Cor de fundo para toda a página */
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li:first-child {
+      margin-left: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .content {
+      text-align: center;
+      margin-top: 50px; /* Espaçamento entre a navegação e o conteúdo */
+    }
+
+    /* Estilo para a área de agrupamento dos painéis de receitas usando Flexbox */
+    .receitas-container {
+      display: flex;
+      flex-wrap: wrap; /* Para que os painéis quebrem para uma nova linha se não houver espaço suficiente */
+      justify-content: center; /* Centraliza os painéis horizontalmente */
+      gap: 20px; /* Espaçamento entre os painéis */
+    }
+
+    /* Estilo para os painéis de receitas */
+    .receita-panel {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      width: 300px; /* Largura fixa dos painéis */
+      padding: 20px;
+    }
+
+    /* Estilo para o nome da receita */
+    .receita-panel h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    /* Estilo para a foto do prato */
+    .receita-panel img {
+      width: 100%; /* Ajusta a imagem para ocupar toda a largura do painel */
+      border-radius: 8px; /* Borda arredondada para a imagem */
+    }
+
+    /* Estilo para a lista de itens */
+    .receita-panel ul {
+      margin-top: 10px;
+      padding-left: 0;
+    }
+
+    /* Estilo para o modo de preparo */
+    .receita-panel p {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="receitas.html">Receitas</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <!-- Área de agrupamento dos painéis de receitas -->
+    <section class="receitas-container">
+      <!-- Painel de Receita 1 -->
+      <div class="receita-panel">
+        <h2>Aroz de Couve flor</h2>
+        <img src="arroz.jpeg" alt="Imagem da Receita 1">
+        <ul>
+          <li>Arroz</li>
+          <li>Couve2</li>
+          <li>Cebola Media3</li>
+          <li>Azeite</li>
+        </ul>
+        <p>Modo de Preparo da Receita </p>
+        <p>O pedaço padrão de Lorem Ipsum usado deões em inglês da tradução de 1914 de H. Rackham.</p>
+      </div>
+
+      <!-- Painel de Receita 2 -->
+      <div class="receita-panel">
+        <h2>Bolo de Cafe</h2>
+        <img src="bolo.jpg" alt="Imagem da Receita 2">
+        <ul>
+          <li>Farinha</li>
+          <li>Açucar</li>
+          <li>Cafe</li>
+          <li>Chocolate em PO</li>
+          <li>Ovos</li>
+          <p>Modo de Preparo da Receita </p>
+          <p>O pedaço padrão de Lorem Ipsum usado deões em inglês da tradução de 1914 de H. Rackham.</p>
+        </ul>
+        
+      </div>
+      <!-- Adicione quantos painéis de receitas forem necessários -->
+    </section>
+  </div>
+
+  <footer>
+    &copy; Jurema 2022
+  </footer>
+</body>
+</html>
